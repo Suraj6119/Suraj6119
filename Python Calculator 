@@ -1,0 +1,44 @@
+# Creating a simple calculator with the help of Python language.
+
+def fun():
+    while True:
+        a = int(input("enter number:- "))
+        b = int(input("enter second number:- "))
+        c = input("enter operator:- ")
+    
+        if c =="+":
+            print("sum :-", a + b)
+            print(" ")
+            
+        elif c =="-":
+            print("sub:- ", a - b)
+            print(" ")
+            
+        elif c == "*":
+            print("multiply", a * b)
+            print(" ")
+            
+        elif c =="/":
+            print("divide", a / b)
+            print(" ")
+            
+        elif c == '%':
+            print("module", a % b)
+            print(" ")
+            
+        else:
+            print("invalid operator")
+        
+        print("if you want to continue this function write \"yes\" nor for write \"no\" ")
+        
+        ur = str(input("enter :- "))  
+        print(" ")
+        
+        if ur == "no":
+            print("function ended")
+            break
+        else:
+            continue 
+            print(" ")
+    
+fun()   
