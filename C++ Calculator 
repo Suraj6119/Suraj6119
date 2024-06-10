@@ -1,1 +1,76 @@
-I make a simple calculator using C++ programming language.
+/* I make a simple calculator using C++ programming language. */
+
+
+#include <iostream>
+using namespace std;
+
+void fun(){
+	
+	while(true){
+		
+		int a,b;
+		string s1;
+		char op;
+		
+		cout << "First Number :- ";
+		cin >> a;
+	//	cout<<endl;
+		cout << "Second Number :- ";
+		cin >> b;
+	//	cout<<endl;
+		cout << "Operator(+, -, *, /, %) :- ";
+		cin >> op;
+	//	cout << endl;
+		
+		switch (op){
+			
+			case '+':
+			cout << "sum :- " << a + b;
+		//	cout << endl;
+			break;
+			
+			case '-':
+			cout << "sub :- " << a - b;
+		//	cout << endl;
+			break;
+			
+			case '*':
+			cout << "multiply :- " << a * b;
+		//	cout << endl;
+		    break;
+		    
+		    case '/':
+		    cout << "divide :- " << a / b;
+		//    cout << endl;
+		    break;
+		    
+		    case '%':
+		    cout << "module :- " << a % b;
+		//    cout << endl;
+		    break;
+		    
+		    default:
+		    cout << "invalid operator";
+		//    cout << endl;
+		    break;
+		    		    			
+		}
+		cout << endl << endl;
+		cout << "if you want to continue, write \"yes\", nor for \"no\" :-  ";
+		cin >> s1;
+		cout << endl;
+		
+		if (s1 == "no") {
+			cout <<"program completed \n";
+			break;
+		}
+		else {
+			continue;
+		}
+		
+	}
+};
+int main(){
+	fun();
+}
+
